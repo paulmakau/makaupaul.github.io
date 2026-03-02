@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusConnect - Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>CampusConnect Events</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+</nav>
+
+<div class="card">
+    <h3>Cultural Week</h3>
+    <p>Date: 10th March 2026</p>
+    <p class="more">Enjoy music, dance and food from different cultures.</p>
+    <button class="btn">Show More</button>
+</div>
+
+<div class="card">
+    <h3>Sports Day</h3>
+    <p>Date: 20th March 2026</p>
+    <p class="more">Athletics, football and basketball competitions.</p>
+    <button class="btn">Show More</button>
+</div>
+
+<div class="card">
+    <h3>Students Election</h3>
+    <p>Date: 5th April 2026</p>
+    <p class="more">Vote for your student leaders.</p>
+    <button class="btn">Show More</button>
+</div>
+
+<div class="card">
+    <h3>Tree Planting Day</h3>
+    <p>Date: 15th April 2026</p>
+    <p class="more">Join us in making our campus greener.</p>
+    <button class="btn">Show More</button>
+</div>
+
+<script>
+$(".more").hide();
+
+$(".btn").click(function(){
+    $(this).prev(".more").slideToggle();
+});
+</script>
+
+</body>
+</html>
