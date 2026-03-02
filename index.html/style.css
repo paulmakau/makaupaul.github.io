@@ -1,0 +1,74 @@
+/* ===== UPDATED COLOR VARIABLES ===== */
+:root {
+    --primary-bg: #fdfcfb;      /* Warm off-white background */
+    --header-bg: #1a1a1a;       /* Deep charcoal (almost black) */
+    --accent-color: #e67e22;    /* Warm Terracotta / Burnt Orange */
+    --text-main: #2c3e50;       /* Soft dark gray for readability */
+    --text-light: #ffffff;      /* Pure white for dark backgrounds */
+    --card-bg: #ffffff;
+}
+
+/* ===== UPDATED STYLES ===== */
+
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-main); 
+    line-height: 1.6;
+}
+
+header {
+    background: var(--header-bg);
+    color: var(--text-light);
+    text-align: center;
+    padding: 40px;
+    border-bottom: 4px solid var(--accent-color); /* Added a thin accent line */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #111111; /* Slightly darker than header */
+    padding: 15px;
+}
+
+nav a {
+    color: #a0a0a0; /* Muted silver-gray */
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: 500;
+    text-transform: uppercase; /* Cleaner, more modern look */
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color); /* Warm glow on hover */
+}
+
+.banner {
+    /* Sophisticated dark gradient */
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+    color: var(--text-light);
+    text-align: center;
+    padding: 120px 20px;
+}
+
+button {
+    background: var(--accent-color);
+    color: white; 
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px; /* Slightly sharper corners for a premium feel */
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #d35400; /* Richer, darker orange */
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 6px 15px rgba(230, 126, 34, 0.3);
+}
